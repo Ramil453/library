@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="h1">Перечень услуг, предоставляемых нашей библиотекой</h1>
+        <a href="#" id="free">бесплатные</a>
+        <span>|</span>
+        <a href="#" id="paid">платные</a>
+    </div>
+    <div class="text">
+        <p>Основные услуги Библиотека оказывает бесплатно, дополнительные – на платной основе.
+        Услуги можно получить при непосредственном посещении Библиотеки и в режиме удаленного доступа.</p>
+
+        <h2 id="text-free">Бесплатные услуги</h2>
+
+        <ul class="text-ul">
+            <li class="text-ul__li">предоставление полной информации о составе фондов Библиотеки и наличии в фонде конкретного документа;
+            </li>
+            <li class="text-ul__li">предоставление доступа к справочно-поисковому аппарату, базам данных, предоставление консультационной помощи в поиске и выборе источников информации, в т.ч. в режиме ONLINE на web-сайте Библиотеки (Положение);</li>
+            <li class="text-ul__li">предоставление во временное пользование документов из библиотечного фонда в соответствии с правилами пользования Библиотекой;</li>
+            <li class="text-ul__li">предоставление доступа к изданиям, переведенным в электронный вид, хранящимся в Библиотеке, в том числе к фонду редких книг, с учетом соблюдения требований законодательства Российской Федерации об авторских и смежных правах (Положение);</li>
+            <li class="text-ul__li">предоставление доступа к удаленным электронным информационным ресурсам, включающим полнотекстовые документы, в соответствии с действующим законодательством Российской Федерации;</li>
+            <li class="text-ul__li">выполнение запросов, не требующих длительных библиографических разысканий;</li>
+            <li class="text-ul__li">обеспечение беспроводного доступа в Интернет (зона Wi-Fi) для пользователей со своими мобильными устройствами;</li>
+            <li class="text-ul__li">предоставление пользователям возможности участия вкультурно-просветительских, интеллектуально-досуговых мероприятиях, проводимых библиотекой, в деятельности клубов, любительских и иных библиотечных объединениях;</li>
+            <li class="text-ul__li">предоставление рабочих мест, оснащенные компьютерным оборудованием с доступом к локальным и удаленным электронным ресурсам; рабочих мест с розетками для подключения личного компьютерного оборудования; аппарата для чтения микрофильмов;</li>
+            <li class="text-ul__li">услуги виртуальной справочной службы библиотеки;</li>
+            <li class="text-ul__li">предварительный заказ и продление срока пользования документами, в т.ч. в режиме ONLINE на web-сайте Библиотеки;</li>
+            <li class="text-ul__li">доставка книг из фондов Библиотеки на дом для людей с ограниченными возможностями здоровья.</li>
+        </ul>
+
+        <h2 id="text-paid">Платные услуги</h2>
+        <ul class="text-ul">
+            <li class="text-ul__li">
+                Платные услуги оказываются в соответствии с действующим законодательством на основании следующих документов:
+
+                Положение о платных операциях, работах, услугах, выполняемых БУК ВО «Областная универсальная научная библиотека»
+
+                Перечень платных операций, работ, услуг, выполняемых БУК ВО «Областная универсальная научная библиотека»
+
+                Устав БУК ВО «Областная универсальная научная библиотека»
+            </li>
+            <li class="text-ul__li">выдача книг и периодики на ночь</li>
+            <li class="text-ul__li">доставка книг по МБА</li>
+            <li class="text-ul__li">доставка документов удаленным пользователям</li>
+            <li class="text-ul__li">бронирование документов</li>
+            <li class="text-ul__li">выполнение сложной тематической справки</li>
+            <li class="text-ul__li">составление аннотированного списка литературы</li>
+            <li class="text-ul__li">составление библиографического списка к рефератам</li>
+            <li class="text-ul__li">оформление сносок</li>
+            <li class="text-ul__li">предоставление информации в результате поиска в электронном и бумажном виде</li>
+            <li class="text-ul__li">размещение информационных материалов в помещении библиотеки</li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;600;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+
+        html, 
+        body {
+            width: 100%;
+            font-family: 'Roboto Condensed';
+            padding-top: 20px;
+}   
+
+        a{
+            color: black;
+            background-color: white;
+            width: 100%;
+            font-size: 20px;
+            transition: .5s all;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: rgb(255, 123, 0);
+        }
+
+        .header {
+            text-align: center;
+            position: fixed;
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            margin-top: -40px;
+            padding-top: 20px;
+            display: inline;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+        }
+
+        .text {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 130px;
+            padding: 0 300px;      
+        }
+
+        .text-ul {
+            padding: 0 20px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            background: linear-gradient(90deg, rgb(255, 123, 0), rgba(0, 0, 0, 0.8)); 
+            -webkit-background-clip: text;
+            color: transparent;
+            padding-bottom: 10px;
+        }
+
+        .text-ul__li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        @media (max-width: 1000px) {
+            .text {
+                padding: 0 100px;
+                
+            }
+        }
+        @media (max-width: 750px) {
+            .h1 {
+                font-size: 24px
+            }
+        }
+        @media (max-width: 450px) {
+            .h1 {
+                font-size: 20px;
+            }
+            .text {
+                padding: 0 10px;
+            }
+        }
+        @media (max-width: 560px) {
+            .h1 {
+                font-size: 20px
+            }
+            .text {
+                padding: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                height: 150px;
+            }
+        }
+    </style>
+    <script>
+     
+    document.getElementById('paid').onclick = function() {
+        document.getElementById('text-paid').scrollIntoView({behavior: 'smooth'});
+    }
+    document.getElementById('free').onclick = function() {
+        document.getElementById('text-free').scrollIntoView({behavior: 'smooth'});
+    }
+    </script>
+</body>
+</html>

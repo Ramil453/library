@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоимость</title>
+</head>
+<body>
+    <h1>Стоимость</h1>
+
+    <p>Со стоимостью аренды книг вы можете ознакомиться позвонив по номеру +3 467 486-37-88 или написав нам в Telegram</p>
+
+    <h2>А так же можете оставить ваш номер телефона для того чтобы мы с вами связались</h2>
+
+    <div class="feedback-input">
+        <input type="text" class="form__input" placeholder="Имя Фамилия" id="name" required>
+        <label for="name" class="form__label">Ваше Имя и Фамилия</label>
+
+        <input type="text"  class="form__input" placeholder="Ваш номер телефона" id="email" required>
+        <label for="email" class="form__label">Ваш номер</label>
+
+        <button class="feedback-btn" type="button" id="price-action">отправить</button>
+    </div>
+
+
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html, 
+body {
+    width: 80%;
+    font-family: 'Roboto Condensed';
+    padding: 20px 50px;
+}   
+
+h1 {
+    background: linear-gradient(90deg, rgb(255, 123, 0), rgba(0, 0, 0, 0.8)); 
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    background: linear-gradient(90deg, rgb(255, 123, 0), rgba(0, 0, 0, 0.8)); 
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.feedback-btn {
+    padding: 20px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #C4C4C4;
+    width: 90%;
+}
+
+
+.feedback-input  {
+    width: 50%;
+}
+
+.form__input {
+    width: 100%;
+    padding: 30px;
+    border: none;
+    border-bottom: 1px solid #C4C4C4;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__input:focus {
+    outline: none;
+    border-bottom: 3px solid #66D763;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.5s all;
+}
+.form__input:focus:invalid {
+    border-bottom: 3px solid #D76363;
+}
+.form__label {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+    margin-left: 15px;
+    transition: 1s all;
+    margin-bottom: 40px;
+}
+.form__input:-moz-placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30px);
+}
+.form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30px);
+}
+
+@media (max-width: 580px) {
+    body {
+        padding: 20px 10px;
+    }
+}
+@media (max-width: 450px) {
+    body {
+        width: 100%;
+    }
+}
+@media (max-width: 390px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 320px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 390px) {
+    h2 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 320px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 900px) {
+    .feedback-input {
+        width: 100%;
+    }
+}
+
+
+    </style>
+    <script>
+            document.getElementById('price-action').onclick = function() {
+        if(document.getElementById('name').value === '') {
+            alert('Заполните поле имя!');
+        } else if (document.getElementById('email').value === '') {
+        alert('Заполните поле телефон!')
+        } 
+        else {
+            alert('Спасибо за отзыв!')
+        }
+    } 
+    </script>
+</body>
+</html>
